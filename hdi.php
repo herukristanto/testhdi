@@ -10,7 +10,7 @@ function generatePattern($val)
             echo " &nbsp";
         }
         for ($a1=$atas; $a1 >= $a; $a1--) {
-            echo ($a % 2 == 0) ? "*" : "o";
+            echo ($a1 % 2 == 0) ? "o" : "x";
         }
         if ($a <= 1) {
             
@@ -26,7 +26,7 @@ function generatePattern($val)
             }
         }
         for($c=$bawah; $c>=$a; $c-=1){
-            echo ($a % 2 == 0) ? "*" : "o";
+            echo ($c % 2 == 0) ? "o" : "x";
         }
         echo "<br/>";
     }
